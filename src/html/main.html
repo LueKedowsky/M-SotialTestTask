@@ -1,0 +1,118 @@
+<div class="main__container">
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#instruction"><label for="menu__toggle">ПРАВИЛА</label></a></li>
+            <li><a class="menu__item" href="#footer"><label for="menu__toggle">ПРИЗЫ</label></a></li>
+            <li><a class="menu__item" href="#footer"><label for="menu__toggle">ПОБЕДИТЕЛИ</label></a></li>
+            <li>
+                <div class="menu__divider"></div>
+            </li>
+            <li><a class="menu__item" href="#footer"><label for="menu__toggle">Обратная связь</label></a></li>
+            <li><a class="menu__item" href="#instruction"><label for="menu__toggle">Правила акции</label></a></li>
+            <li><a class="menu__item" href="#footer"><label for="menu__toggle">FAQ</label></a></li>
+            <li>
+                <div class="menu__divider"></div>
+            </li>
+            <li>
+                <div class="menu__socials menu__item">
+                    <div class="socials__title">Присоединяйтесь к нам</div>
+                    <div class="socials__icons icons">
+                        <a class="icons__facebook" href="#"><img src="/images/facebookIcondarker.svg" alt=""></a>
+                        <a class="icons__vk" href="#"><img src="/images/vkIcondarker.svg" alt=""></a>
+                        <a class="icons__linkedin" href="#"><img src="/images/linkedinIcondarker.svg" alt=""></a>
+                        <a class="icons__twitter" href="#"><img src="/images/twitterIcondarker.svg" alt=""></a>
+                        <a class="icons__instagram" href="#"><img src="../images/instaIcondarker.svg" alt=""></a>
+                        <a class="icons__pinterest" href="#"><img src="/images/pinterestIcondarker.svg" alt=""></a>
+                    </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main__banner banner">
+        <img class="banner__img" src="../images/banner.png" alt="">
+    </div>
+    <div class="main__ticket ticket">
+        <button class="ticket__button">ЗАГРУЗИТЬ ЧЕК</button>
+    </div>
+    <div class="main__promoSlogan promoSlogan" id="instruction">
+        НАМ 40 ЛЕТ — ВАМ ПОДАРКИ
+    </div>
+    <div class="main__instruction instruction">
+        <div class="instruction__baloon baloon"><img src="../images/baloon.svg" alt=""></div>
+        <ul class="instruction__list">
+            <li><img class="instruction__img" src="../images/item1.svg" alt="">
+                <div>Покупайте сыр Oltermanni</div>
+            </li>
+            <div class="arrowSeparator"></div>
+            <li><img class="instruction__img" src="../images/item2.svg" alt="">
+                <div>Регистрируйте чеки на сайте в период
+                    с 1 сентября по 30 ноября 2020 года</div>
+            </li>
+            <div class="arrowSeparator"></div>
+            <li><img class="instruction__img" src="../images/item3.svg" alt="">
+                <div>Получайте гарантированные
+                    призы — деньги на телефон</div>
+            </li>
+            <div class="arrowSeparator"></div>
+            <li><img class="instruction__img" src="../images/item4.svg" alt="">
+                <div>Участвуйте в еженедельных розыгрышах</div>
+            </li>
+            <div class="arrowSeparator"></div>
+            <li><img class="instruction__img" src="../images/item5.svg" alt="">
+                <div>Получите возможность выиграть 400 000 ₽
+                    на новый интерьер</div>
+            </li>
+        </ul>
+        <div class="instruction__spiral spiral">
+            <img src="../images/spire.svg" alt="">
+        </div>
+    </div>
+    <div class="brown-spiral">
+        <div class="brown-spiral__image"><img src="../images/brownspiral.svg" alt=""></div>
+    </div>
+    <div class="promo-container">
+        <div class="promo-container__text">В АКЦИИ УЧАСТВУЮТ</div>
+        <div class="image-slider swiper-container">
+            <div class="image-slider__wrapper swiper-wrapper">
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <div class="img-square"><img src="../images/cheese1.svg" alt=""></div>
+                        <br>Лёгкий, брусок<br>180 г
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <div class="img-square"><img src="../images/cheese2.svg" alt=""></div><br>Лёгкий, слайсы<br>120,
+                        225 г
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <div class="img-square"><img src="../images/cheese3.svg" alt=""></div><br>Сливочный,
+                        брусок<br>200, 300 г
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <div class="img-square"><img src="../images/cheese4.svg" alt=""></div><br>Сливочный,
+                        слайсы<br>130, 250 г
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let inputs = document.getElementById('menu__toggle');
+    window.addEventListener('scroll', function () {
+        inputs.checked = false;
+    });
+</script>

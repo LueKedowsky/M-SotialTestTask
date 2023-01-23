@@ -1,0 +1,5 @@
+.vscode
+
+node_modules
+
+src/.temporary_cache

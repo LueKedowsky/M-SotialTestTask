@@ -1,0 +1,128 @@
+// =====================================================================================================================
+.header {
+  width: 100%;
+  position: fixed;
+  margin-bottom: 80px;
+  z-index: 2;
+  &.sticky {
+    // ..стили для липкого хедера
+  }
+  // .header__container
+  &__container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    width: clamp(320px, 100%, 1920px);
+    @media (max-width: 1200px) {
+      height: 62px;
+    }
+    .logo {
+      margin-left: 50px;
+      z-index: 999;
+
+      @media (max-width: 500px) {
+        transform: scale(0.7);
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  @media (max-width: 960px) {
+    display: none;
+  }
+  a {
+    @extend %textStyles500;
+  }
+
+  li {
+    margin: 10px 60px;
+    @media (max-width: 1200px) {
+      margin: 10px 20px;
+    }
+  }
+}
+
+.auth {
+  &__login {
+    width: 140px;
+    height: 42px;
+    border: 1px;
+    background: #ffcd00;
+    border-radius: 29px;
+    margin-right: 20px;
+    @extend %textStyles500;
+    @media (max-width: 500px) {
+      transform: scale(0.6);
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__register {
+    background: #fff;
+    @extend %textStyles500;
+    @media (max-width: 980px) {
+      display: none;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+// =====================================================================================================================
+
+// Burger
+
+// .icon-menu {
+//   display: none;
+//   @include media(767) {
+//     display: block;
+//     position: relative;
+//     width: rem(30);
+//     height: rem(18);
+//     cursor: pointer;
+//     z-index: 5;
+//     span,
+//     &::before,
+//     &::after {
+//       content: "";
+//       transition: all 300ms ease 0ms;
+//       right: 0;
+//       position: absolute;
+//       width: 100%;
+//       height: rem(2);
+//       background-color: #000;
+//     }
+//     &::before {
+//       top: 0;
+//     }
+//     &::after {
+//       bottom: 0;
+//     }
+//     span {
+//       top: calc(50% - rem(1));
+//     }
+//     .menu-open & {
+//       span {
+//         width: 0;
+//       }
+//       &::before {
+//         top: calc(50% - rem(1));
+//         transform: rotate(-45deg);
+//       }
+//       &::after {
+//         bottom: calc(50% - rem(1));
+//         transform: rotate(45deg);
+//       }
+//     }
+//   }
+// }
+
